@@ -1,1 +1,0 @@
-# BloodBankManagement-Angular-and-SpringBoot
