@@ -1,0 +1,42 @@
+<div class="sidebar-logo">
+  <div class="welcometxt" style="float: left;"><b style="color: white;">Admin Dashboard</b></div>
+    <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+    <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+</div>
+
+<div class="sidebar-container">
+    
+    <ul class="sidebar-navigation">
+      <li>
+         <i class="fa fa-plus" aria-hidden="true"></i> <label [routerLink]="['/addDonor']" style="cursor: pointer;">Add Donors</label>
+      </li>
+      <li>
+        <i class="fa fa-heart" aria-hidden="true"></i> <label [routerLink]="['/donorlist']" style="cursor: pointer;">Donors</label> 
+      </li>
+      <li>
+        <i class="fa fa-user" aria-hidden="true"></i> <label [routerLink]="['/userlist']" style="cursor: pointer;">Users</label>
+      </li>
+      <li>
+          <i class="fa fa-share-square" aria-hidden="true"></i> <label [routerLink]="['/requesthistory']" style="cursor: pointer;">Blood Requests</label>
+      </li>
+      <li>
+          <i class="fa fa-cart-plus" aria-hidden="true"></i> <label [routerLink]="['/bloodStock']" style="cursor: pointer;">Blood stock</label>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="row">
+    <div style="color: maroon; font-weight: bold; font-size: 30px; margin: 0% 0% 5% 18%;"><b>Welcome to Admin Dashboard</b></div>
+    <div *ngFor="let details of bloodDetails | async" class="col-4 card" id="bloodCards">
+        <a><img class="bloodimg" [src]="'assets/img/bloodDrop.png'" width="100" height="100"></a>
+        <div class="card-block">
+            <div class="text"><b>Blood Group: </b><b class="element" style="font-size: 30px; color: red;"> {{details.bloodgroup}}</b> </div>
+            <div class="text"><b>Number of Donors: </b><b class="element" style="font-size: 30px;"> {{details.count}}</b> </div>
+            <div class="text"><b>Available Units: </b><b class="element" style="font-size: 30px;"> {{details.units}}</b> </div>
+        </div>
+    </div>
+ </div>
+ 
+  <br>
+  <app-footer></app-footer>

@@ -1,0 +1,51 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">{{title}}</b></div>
+    <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+      <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+      <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="text-align: center; font-family: 'Oswald', sans-serif;color: maroon; margin-top: 3%; margin-bottom: 3%;">Overall Request History</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Idendity</th>
+            <th>Name</th>
+            <th>mobile</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+            <th>age</th>
+            <th>Disease</th>
+            <th>Required Units</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let history of requests | async">
+            <td><img *ngIf="history.gender === 'Male' || history.gender === 'male'" class="bloodimg" [src]="'assets/img/male.png'" width="80" height="80">
+              <img *ngIf="history.gender === 'Female' || history.gender === 'female'" class="bloodimg" [src]="'assets/img/female.png'" width="80" height="80">
+              </td>
+            <td>{{history.name}}</td>
+            <td>{{history.mobile}}</td>
+            <td>{{history.gender}}</td>
+            <td style="color: red; font-size: 25px;">{{history.bloodgroup}}</td>
+            <td>{{history.age}} years</td>
+            <td style="color: navy;">{{history.disease}}</td>
+            <td>{{history.units}} units</td>
+            <td>
+                <div *ngIf="history.status === 'accept' && loggedUser !== 'admin@gmail.com'" class="accepted">Accepted</div>
+                <div *ngIf="history.status === 'false' && loggedUser !== 'admin@gmail.com'" class="pending">Pending</div>
+                <div *ngIf="history.status === 'reject' && loggedUser !== 'admin@gmail.com'" class="rejected">Rejected</div>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<br><br><br><br><br><br><br><br>
+  <app-footer></app-footer>

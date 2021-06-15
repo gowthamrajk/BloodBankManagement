@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.container
+{
+    max-width: 450px;
+    padding: 40px 40px 25px 40px;
+    margin-top: 2%; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 35px 8px rgb(147, 158, 147); 
+    border-top: 8px solid rgb(235, 255, 55); 
+    background-color: white;
+    margin-bottom: 20px;
+}
+input{
+    border-radius: 12px;
+    margin-top: 8px;
+}
+.textual
+{
+    color: rgb(64, 85, 15); 
+    text-align: center; 
+    margin-top: -20px;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+}
+label{
+    margin-top: 8px;
+}
+.registerbtn
+{
+    background-color: transparent;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: auto;  
+    padding-bottom: 7px;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+}
+.registerbtn:hover
+{
+    background-color: rgb(23, 78, 78);
+    padding-left: 7%;
+    padding-right: 7%;
+    cursor: pointer;
+    color: white;
+}

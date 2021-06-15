@@ -1,0 +1,66 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">{{title}}</b></div>
+    <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+      <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+      <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 style="text-align: center; font-family: 'Oswald', sans-serif;color: maroon; margin-top: 3%; margin-bottom: 3%;">Overall Request History</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Idendity</th>
+            <th>Name</th>
+            <th>mobile</th>
+            <th>Gender</th>
+            <th>Blood Group</th>
+            <th>age</th>
+            <th>Disease</th>
+            <th>Required Units</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let history of requests | async">
+            <td><img *ngIf="history.gender === 'Male' || history.gender === 'male'" class="bloodimg" [src]="'assets/img/male.png'" width="80" height="80">
+              <img *ngIf="history.gender === 'Female' || history.gender === 'female'" class="bloodimg" [src]="'assets/img/female.png'" width="80" height="80">
+              </td>
+            <td>{{history.name}}</td>
+            <td>{{history.mobile}}</td>
+            <td>{{history.gender}}</td>
+            <td style="color: red; font-size: 25px;">{{history.bloodgroup}}</td>
+            <td>{{history.age}} years</td>
+            <td style="color: navy;">{{history.disease}}</td>
+            <td>{{history.units}} units</td>
+            <td>
+              
+                <div *ngIf="loggedUser === 'admin@gmail.com' && history.status === 'false'" >
+                  <button (click)="acceptRequest(history.email)" id="acceptbtn" value="history.email" value="Accept" style="margin-bottom: 5px;" class="accepted">Accept</button>
+                  <button (click)="rejectRequest(history.email)" id="rejectbtn" value="history.email" value="Reject" class="rejected">Reject</button>
+                  <div id="acceptedbtn" class="accepted" style="display: none;">Accepted</div>
+                  <div id="rejectedbtn" class="rejected" style="display: none;">Rejected</div>
+                </div>
+                <div *ngFor="let details of responses | async">
+                <div *ngIf="details === 'accept' && loggedUser !== 'admin@gmail.com'" class="accepted">Accepted</div>
+                <div *ngIf="details === 'false' && loggedUser !== 'admin@gmail.com'" class="pending">Pending</div>
+                <div *ngIf="details === 'reject' && loggedUser !== 'admin@gmail.com'" class="rejected">Rejected</div>
+              </div>
+              <div *ngIf="loggedUser === 'admin@gmail.com' && history.status === 'accept'" >
+                <div class="accepted">Accepted</div>
+              </div>
+              <div *ngIf="loggedUser === 'admin@gmail.com' && history.status === 'reject'" >
+                <div class="rejected">Rejected</div>
+              </div>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<br><br><br><br><br><br><br><br>
+  <app-footer></app-footer>

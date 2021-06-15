@@ -1,0 +1,106 @@
+
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">User Dashboard</b></div>
+    <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+      <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+      <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+
+<div class="container">
+    <h2 class="textual"><i style="color: red;" class="fa fa-heart"></i> Voluntear As Donor </h2>
+    <div style="text-align: center; color: green;"><b>{{msg}}</b></div>
+    <form #addDonorform="ngForm" (ngSubmit)="addDonor()">
+        
+        <div class="form-group">
+            <label for="donorname">Name: <b class="text-danger">*</b></label>
+            <input type="text" class="form-control" placeholder="enter your name" name="donorname" [(ngModel)]="donor.name" required 
+            #donorname="ngModel"
+            [class.is-invalid]="donorname.invalid && donorname.touched">
+           <small class="text-danger" [class.d-none]="donorname.valid || donorname.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">Please enter full name of the donor with initial</small>
+  
+        <div class="form-group">
+            <label for="bloodgroup">Blood Group: <b class="text-danger">*</b></label>
+            <input type="text" class="form-control" placeholder="enter blood group" name="bloodgroup" [(ngModel)]="donor.bloodGroup" required 
+            #bloodgroup="ngModel"
+            [class.is-invalid]="bloodgroup.invalid && bloodgroup.touched">
+           <small class="text-danger" [class.d-none]="bloodgroup.valid || bloodgroup.untouched"><b>required field</b></small>
+        </div>
+  
+        <div class="form-group">
+            <label for="units">Units of Blood: <b class="text-danger">*</b></label>
+            <select class="form-control" placeholder="1" id="sel1" name="units" [(ngModel)]="donor.units"
+            #units="ngModel">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+           <small class="text-danger" [class.d-none]="units.valid || units.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: rgb(179, 11, 11); font-size: 10px; font-weight: bold;">Maximum units can be donated is 3 pints</small>
+  
+        <div class="form-group">
+            <label for="mobile">Mobile Number: <b class="text-danger">*</b></label>
+            <input type="tel" class="form-control" placeholder="enter mobile number" name="mobile" [(ngModel)]="donor.mobile" required 
+            #mobile="ngModel"
+            [class.is-invalid]="mobile.invalid && mobile.touched">
+           <small class="text-danger" [class.d-none]="mobile.valid || mobile.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">Please enter 10 digit valid mobile number</small>
+  
+        <div class="form-group">
+            <label for="gender">Gender: <b class="text-danger">*</b></label>
+            <select class="form-control" id="sel1" name="gender" [(ngModel)]="donor.gender"
+            #gender="ngModel">
+                <option selected>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+           </div>
+  
+        <div class="form-group">
+            <label for="age">Age: <b class="text-danger">*</b></label>
+            <input type="number" min="0" max="65" class="form-control" placeholder="enter your age" name="age" [(ngModel)]="donor.age" required 
+            #age="ngModel"
+            [class.is-invalid]="age.invalid && age.touched">
+           <small class="text-danger" [class.d-none]="age.valid || age.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: rgb(179, 11, 11); font-size: 10px; font-weight: bold;">Maximum Age limit of donors is 65</small>
+  
+        <div class="form-group">
+            <label for="city">Location: <b class="text-danger">*</b></label>
+            <input type="text" class="form-control" placeholder="enter city" name="city" [(ngModel)]="donor.city" required 
+            #city="ngModel"
+            [class.is-invalid]="city.invalid && city.touched">
+           <small class="text-danger" [class.d-none]="city.valid || city.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">Please mention proper city name (eg: Coimbatore)</small>
+  
+        <div class="form-group">
+            <label for="address">Address: <b class="text-danger">*</b></label>
+            <input type="text" class="form-control" placeholder="enter your address" name="address" [(ngModel)]="donor.address" required 
+            #address="ngModel"
+            [class.is-invalid]="address.invalid && address.touched">
+           <small class="text-danger" [class.d-none]="address.valid || address.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">Please mention proper donor address for reference purpose</small>
+  
+        <div class="form-group">
+            <label for="date">Date of Donation: <b class="text-danger">*</b></label>
+            <input type="date" class="form-control" placeholder="enter donating date" id="date" name="date" [(ngModel)]="donor.date" required 
+            #date="ngModel"
+            [class.is-invalid]="date.invalid && date.touched">
+           <small class="text-danger" [class.d-none]="date.valid || date.untouched"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">By default, today's date will be selected</small>
+        
+       <div class="checkbox" style="margin-top: 5px;">
+        <small style="color: gray;"><input type="checkbox" name="remember" required> Are you interested to donate blood </small><br>
+        <small style="color:rgb(179, 11, 11); font-weight: bold;"> (adding you as a donor without your interest is against our Terms and Conditions !!!)</small>
+      </div>
+      <button style="margin-top: 15px;" [disabled]="addDonorform.form.invalid" type="submit" class="btn registerbtn">Add Donor</button>
+    </form>
+  </div>
+  
+  <app-footer></app-footer>

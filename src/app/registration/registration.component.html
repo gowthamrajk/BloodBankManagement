@@ -1,0 +1,91 @@
+
+<div class="container">
+    <h3 class="textual">New User</h3>
+    <form #Registerform="ngForm" (ngSubmit)="registerUser()">
+      <small class="text-danger"><b>{{msg}}</b></small>
+        <div class="form-group">
+        <label for="email">Email Address: <b class="text-danger">*</b></label>
+        <input type="email" class="form-control" placeholder="enter email" name="email" [(ngModel)]="user.email" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+        #email="ngModel"
+        [class.is-invalid]="email.invalid && email.touched"
+        >
+      <div *ngIf="email.errors && (email.invalid && email.touched)">
+        <small class="text-danger" *ngIf="email.errors.required"><b>required field</b></small>
+        <small class="text-danger" *ngIf="email.errors.pattern"><b>Invalid email Id</b></small>
+      </div>
+      <small style="color: gray; font-size: 10px;">Enter proper email address for verification purpose</small>
+      </div>
+
+      <div class="form-group">
+        <label for="username">UserName: <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" placeholder="enter username" name="username" [(ngModel)]="user.username" required 
+        #username="ngModel"
+        [class.is-invalid]="username.invalid && username.touched">
+       <small class="text-danger" [class.d-none]="username.valid || username.untouched"><b>required field</b></small>
+      </div>
+       <small style="color: gray; font-size: 10px;">Enter full name with initial verification purpose</small>
+
+      <div class="form-group">
+        <label for="bloodgroup">Blood Group: <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" placeholder="enter blood group" name="bloodgroup" [(ngModel)]="user.bloodgroup" required 
+        #bloodgroup="ngModel"
+        [class.is-invalid]="bloodgroup.invalid && bloodgroup.touched">
+       <small class="text-danger" [class.d-none]="bloodgroup.valid || bloodgroup.untouched"><b>required field</b></small>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender: <b class="text-danger">*</b></label>
+        <select class="form-control" id="sel1" name="gender" [(ngModel)]="user.gender"
+            #gender="ngModel">
+                <option selected>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+       <small class="text-danger" [class.d-none]="gender.valid || gender.untouched"><b>required field</b></small>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age: <b class="text-danger">*</b></label>
+        <input type="number" class="form-control" placeholder="enter your age" name="age" [(ngModel)]="user.age" required 
+        #age="ngModel"
+        [class.is-invalid]="age.invalid && age.touched">
+       <small class="text-danger" [class.d-none]="age.valid || age.untouched"><b>required field</b></small>
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile Number: <b class="text-danger">*</b></label>
+        <input type="tel" class="form-control" placeholder="enter mobile number" name="mobile" [(ngModel)]="user.mobile" required 
+        #mobile="ngModel"
+        [class.is-invalid]="mobile.invalid && mobile.touched">
+       <small class="text-danger" [class.d-none]="mobile.valid || mobile.untouched"><b>required field</b></small>
+      </div>
+       <small style="color: gray; font-size: 10px;">Enter proper 10 digit mobile number for verification purpose</small>
+
+      <div class="form-group">
+        <label for="pwd">Password: <b class="text-danger">*</b></label>
+        <input type="password" class="form-control" placeholder="enter password" name="pwd" [(ngModel)]="user.password" required 
+        #password="ngModel"
+        [class.is-invalid]="password.invalid && password.touched"
+        >
+        <div *ngIf="password.errors && password.invalid && password.touched">
+          <small class="text-danger" *ngIf="password.errors.required"><b>required field</b></small>
+        </div>
+        <small style="color: gray; font-size: 10px;">atleast one uppercase, numeric digit, lowercase, special character, length of 6-20</small>
+      </div>
+
+      <div class="form-group">
+        <label for="pwd">Confirm Password: <b class="text-danger">*</b></label>
+        <input type="password" class="form-control" placeholder="Re-enter password" name="ConfirmPassword" (ngModel)="user.password" required 
+        #confirmPassword="ngModel"
+        [class.is-invalid]="confirmPassword.invalid && confirmPassword.touched"
+        >
+        <small class="text-danger" [class.d-none]="(confirmPassword.value == password.value) || confirmPassword.untouched"><b>password not matched</b></small>
+      </div>
+      <div class="checkbox" style="margin-top: 5px;">
+        <small style="color: gray;"><input type="checkbox" name="remember"> I agree all Terms & conditions</small>
+      </div>
+      <button [disabled]="Registerform.form.invalid" type="submit" class="btn registerbtn">Register</button>
+    </form>
+    <div class="sign-up" style=" text-align: center; margin-top: 10px;">Already have an Account? <small [routerLink]="['/login']" style="color: navy; text-align: center; cursor: pointer;"><b> Login here</b></small></div>
+    
+  </div>

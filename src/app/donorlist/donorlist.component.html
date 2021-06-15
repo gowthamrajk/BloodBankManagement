@@ -1,0 +1,23 @@
+<div class="sidebar-logo">
+  <div class="welcometxt" style="float: left;"><b style="color: white;">{{title}}</b></div>
+  <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+  <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+  <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+</div>
+
+<div class="row">
+  <div *ngFor="let donor of donors | async" class="col-4 card" id="bloodCards">
+      <a><img *ngIf="donor.gender === 'Male' || donor.gender === 'male'" class="bloodimg" [src]="'assets/img/male.png'" width="120" height="120"></a>
+      <a><img *ngIf="donor.gender === 'Female' || donor.gender === 'female'" class="bloodimg" [src]="'assets/img/female.png'" width="120" height="120"></a>
+      <div class="card-block">
+          <div class="text"><b style="color: navy;">Donor Name : </b><b class="element" style="margin-left: 20px;"> {{donor.name}}</b> </div>
+          <div class="text"><b style="color: navy;">Blood Group : </b><b class="element" style="color: red; margin-left: 18px;"> {{donor.bloodGroup}}</b> </div>
+          <div class="text"><b style="color: navy;">Gender : </b><b class="element" style="margin-left: 64px;"> {{donor.gender}}</b> </div>
+          <div class="text"><b style="color: navy;">Contact : </b><b class="element" style="margin-left: 56px;"> {{donor.mobile}}</b> </div>
+          <div class="text"><b style="color: navy;">Age : </b><b class="element" style="margin-left: 96px;"> {{donor.age}} years</b> </div>
+          <div class="text"><b style="color: navy;">Location : </b><b class="element" style="margin-left: 52px;"> {{donor.city}}</b> </div>
+      </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

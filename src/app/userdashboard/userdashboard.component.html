@@ -1,0 +1,73 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">User Dashboard</b></div>
+      <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+      <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+  
+  <div class="sidebar-container">
+      
+      <ul class="sidebar-navigation">
+        <li>
+           <i class="fa fa-plus" aria-hidden="true"></i> <label [routerLink]="['/requestblood']" style="cursor: pointer;">Make Request</label>
+        </li>
+        <li>
+          <i class="fa fa-paper-plane" aria-hidden="true"></i> <label [routerLink]="['/requesthistoryfromuser']" style="cursor: pointer;">Request History</label> 
+        </li>
+        <li>
+          <i class="fa fa-heart" aria-hidden="true"></i> <label [routerLink]="['/userasdonor']" style="cursor: pointer;">Donate Blood</label> 
+        </li>
+        <li>
+          <i class="fa fa-list" aria-hidden="true"></i> <label [routerLink]="['/donorlist']" style="cursor: pointer;">Available Donors</label> 
+        </li>
+        <li>
+          <i class="fa fa-user" aria-hidden="true"></i> <label [routerLink]="['/userprofile']" style="cursor: pointer;">Edit Profile</label>
+        </li>
+        <li>
+            <i class="fa fa-cart-plus" aria-hidden="true"></i> <label [routerLink]="['/bloodStock']" style="cursor: pointer;">Blood stock</label>
+        </li>
+  
+      </ul>
+</div>  
+
+<div class="row" style="padding: 15px;">
+  <div style="color: maroon; font-weight: bold; font-size: 30px; margin: 2% 0% 5% 20%;"><b>Welcome to User Dashboard</b></div>
+  <div *ngFor="let details of number | async" class="card bg-light"id="bloodCards">
+      <div class="card-body text-left">
+        <div style="font-weight: bolder; font-size: 28px;">Total Donors  <i class="fa fa-heart" aria-hidden="true"></i></div>
+        <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} donors</div>
+      </div>
+  </div>
+  <div *ngFor="let details of totalrequests | async" class="card bg-light"id="bloodCards">
+    <div class="card-body text-left">
+      <div class="card-text" style="font-weight: bolder; font-size: 28px;">Your Total Requests <i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+      <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} requests</div>
+    </div>
+  </div>
+  <div *ngFor="let details of donationcount | async" class="card bg-light"id="bloodCards">
+    <div class="card-body text-left">
+      <div class="card-text" style="font-weight: bolder; font-size: 28px;">Your Blood Donations <i class="fa fa-plus" aria-hidden="true"></i></div>
+      <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} times</div>
+    </div>
+  </div>
+  <div *ngFor="let details of totalusers | async" class="card bg-light"id="bloodCards">
+    <div class="card-body text-left">
+      <div class="card-text" style="font-weight: bolder; font-size: 28px;">Total Registered Users <i class="fa fa-user" aria-hidden="true"></i></div>
+      <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} users</div>
+    </div>
+  </div>
+  <div *ngFor="let details of totalbloodgroups | async" class="card bg-light"id="bloodCards">
+    <div class="card-body text-left">
+      <div class="card-text" style="font-weight: bolder; font-size: 28px;">Total Blood Groups <i class="fa fa-list" aria-hidden="true"></i></div>
+      <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} blood groups</div>
+    </div>
+  </div>
+  <div *ngFor="let details of totalunits | async" class="card bg-light"id="bloodCards">
+    <div class="card-body text-left">
+      <div class="card-text" style="font-weight: bolder; font-size: 28px;">Total Available Units <i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+      <div style="color: maroon; text-transform: capitalize; font-size: larger; font-size: 20px; font-weight: bolder;">{{details}} units of blood (in ml)</div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+<app-footer></app-footer>

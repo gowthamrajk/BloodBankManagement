@@ -1,0 +1,19 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">{{title}}</b></div>
+    <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+    <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+    <button class="logoutbtn" (click)="logout"><i class="fa fa-sign-out"></i> Logout</button>
+</div>
+
+<div class="row">
+    <div *ngFor="let details of bloodDetails | async" class="col-4 card" id="bloodCards">
+        <a><img class="bloodimg" [src]="'assets/img/bloodDrop.png'" width="100" height="100"></a>
+        <div class="card-block">
+            <div class="text"><b>Blood Group: </b><b class="element" style="font-size: 30px; color: red;"> {{details.bloodgroup}}</b> </div>
+            <div class="text"><b>Number of Donors: </b><b class="element" style="font-size: 30px;"> {{details.count}}</b> </div>
+            <div class="text"><b>Available Units: </b><b class="element" style="font-size: 30px;"> {{details.units}}</b> </div>
+        </div>
+    </div>
+ </div>
+
+ <app-footer></app-footer>

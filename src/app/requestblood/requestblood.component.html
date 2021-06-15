@@ -1,0 +1,93 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">User Dashboard</b></div>
+    <button class="logoutbtn" (click)="navigateHome()"><i class="fa fa-home"></i> Home</button>
+      <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+      <button class="logoutbtn" (click)="logout"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+
+  <div class="container" id="requestBlood">
+    <h3 class="textual"><i class="fa fa-plus" aria-hidden="true"></i> Request Blood</h3>
+    <div style="text-align: center; color: green;"><b>{{msg}}</b></div>
+    <form #donateForm="ngForm" (ngSubmit)="requestBlood()">
+
+      <div class="form-group">
+        <label for="patientname">Patient Name: <b class="text-danger">*</b></label>
+        <input type="text" class="form-control" placeholder="enter Patient name" name="patientname" [(ngModel)]="request.name" required 
+        #patientname="ngModel"
+        [class.is-invalid]="patientname.invalid && patientname.touched">
+       <small class="text-danger" [class.d-none]="patientname.valid || patientname.untouched"><b>required field</b></small>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Patient Email Address: <b class="text-danger">*</b></label>
+      <input type="email" class="form-control" placeholder="enter email" name="email" [(ngModel)]="request.email" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+      #email="ngModel"
+      [class.is-invalid]="email.invalid && email.touched"
+      >
+    <div *ngIf="email.errors && (email.invalid && email.touched)">
+      <small class="text-danger" *ngIf="email.errors.required"><b>required field</b></small>
+      <small class="text-danger" *ngIf="email.errors.pattern"><b>Invalid email Id</b></small>
+    </div>
+    <small style="color: gray; font-size: 10px;">Enter proper email address for verification purpose</small>
+    </div>
+  
+    <div class="form-group">
+      <label for="bloodgroup">Patient Blood Group: <b class="text-danger">*</b></label>
+      <input type="text" class="form-control" placeholder="enter blood group" name="bloodgroup" [(ngModel)]="request.bloodgroup" required 
+      #bloodgroup="ngModel"
+      [class.is-invalid]="bloodgroup.invalid && bloodgroup.touched">
+     <small class="text-danger" [class.d-none]="bloodgroup.valid || bloodgroup.untouched"><b>required field</b></small>
+  </div>
+  
+  <div class="form-group">
+    <label for="units">Required units: <b class="text-danger">*</b></label>
+    <select class="form-control" placeholder="1" id="sel1" name="units" [(ngModel)]="request.units"
+    #units="ngModel">
+        <option selected>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+   <small class="text-danger" [class.d-none]="units.valid || units.untouched"><b>required field</b></small>
+  </div>
+  
+  <div class="form-group">
+    <label for="disease">Patient Disease: <b class="text-danger">*</b></label>
+    <input type="text" class="form-control" placeholder="enter disease name" name="disease" [(ngModel)]="request.disease" required 
+    #disease="ngModel"
+    [class.is-invalid]="disease.invalid && disease.touched">
+   <small class="text-danger" [class.d-none]="disease.valid || disease.untouched"><b>required field</b></small>
+  </div>
+  
+  <div class="form-group">
+    <label for="mobile">Patient Mobile Number: <b class="text-danger">*</b></label>
+    <input type="tel" class="form-control" placeholder="enter mobile number" name="mobile" [(ngModel)]="request.mobile" required 
+    #mobile="ngModel"
+    [class.is-invalid]="mobile.invalid && mobile.touched">
+   <small class="text-danger" [class.d-none]="mobile.valid || mobile.untouched"><b>required field</b></small>
+  </div>
+  <small style="color: gray; font-size: 10px;">Please enter 10 digit valid mobile number</small>
+  
+  <div class="form-group">
+    <label for="gender">Patient Gender: <b class="text-danger">*</b></label>
+    <select class="form-control" id="sel1" name="gender" [(ngModel)]="request.gender"
+    #gender="ngModel">
+        <option selected>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+    </select>
+  </div>
+  
+          <div class="form-group">
+              <label for="age">Patinet Age: <b class="text-danger">*</b></label>
+              <input type="number" class="form-control" placeholder="enter patient age" name="age" [(ngModel)]="request.age" required 
+              #age="ngModel"
+              [class.is-invalid]="age.invalid && age.touched">
+             <small class="text-danger" [class.d-none]="age.valid || age.untouched"><b>required field</b></small>
+          </div>
+  
+      <button [disabled]="donateForm.form.invalid" type="submit" class="btn registerbtn">Send Request</button>
+    </form>
+  </div>
+  
+  <app-footer></app-footer>

@@ -1,0 +1,23 @@
+<div class="sidebar-logo">
+    <div class="welcometxt" style="float: left;"><b style="color: white;">Admin Dashboard</b></div>
+    <button class="logoutbtn" [routerLink]="['/loginsuccess']"><i class="fa fa-home"></i> Home</button>
+    <b class="sidebar-text" style="color: whitesmoke;"><i class="fa fa-user"></i> Welcome {{loggedUser}}</b>
+    <button class="logoutbtn" (click)="logout()"><i class="fa fa-sign-out"></i> Logout</button>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let user of users | async" class="col-4 card" id="bloodCards">
+        <a><img *ngIf="user.gender === 'Male' || user.gender === 'male'" class="bloodimg" [src]="'assets/img/male.png'" width="120" height="120"></a>
+        <a><img *ngIf="user.gender === 'Female' || user.gender === 'female'" class="bloodimg" [src]="'assets/img/female.png'" width="120" height="120"></a>
+        <div class="card-block">
+            <div class="text"><b style="color: navy;">User Name : </b><b class="element" style="margin-left: 53px;"> {{user.username}}</b> </div>
+            <div class="text"><b style="color: navy;">Blood Group : </b><b class="element" style="color: red; font-size: larger; margin-left: 35px;"> {{user.bloodgroup}}</b> </div>
+            <div class="text"><b style="color: navy;">Mobile Number : </b><b class="element" style="margin-left: 12px;"> {{user.mobile}}</b> </div>
+            <div class="text"><b style="color: navy;">Gender : </b><b class="element" style="margin-left: 80px;"> {{user.gender}}</b> </div>
+            <div class="text"><b style="color: navy;">Mail ID : </b><b class="element" style="margin-left: 78px;"> {{user.email}}</b> </div>
+            <div class="text"><b style="color: navy;">Age : </b><b class="element" style="margin-left: 110px;"> {{user.age}} years</b> </div>
+          </div>
+    </div>
+  </div>
+  
+  <app-footer></app-footer>
