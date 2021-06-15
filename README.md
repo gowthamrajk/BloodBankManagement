@@ -50,4 +50,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### User Dashboard
 
 ![image](https://user-images.githubusercontent.com/43011442/122097591-78c5a100-ce2d-11eb-9c36-4a17da921ad6.png)
-![image](https://user-images.githubusercontent.com/43011442/122097806-b62a2e80-ce2d-11eb-97d3-9d73f21406ab.png)
+![image](https://user-images.githubusercontent.com/43011442/122098093-030e0500-ce2e-11eb-9e56-3b3544a50fa1.png)
