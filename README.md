@@ -2,8 +2,8 @@
 
 ![](https://img.shields.io/github/languages/count/gowthamrajk/BloodBankManagement)   ![](https://img.shields.io/github/languages/top/gowthamrajk/BloodBankManagement)
 
-- It is an Online Blood Bank Management system which can facilitate you to contribute as a donor and also manage the entire application.
-- It has 2 modes of operation as 1) ADMIN 2) USER
+- It is an **Online Blood Bank Management** system which can facilitate you to contribute as a donor and also manage the entire application.
+- It has 2 modes of operation as **1) ADMIN 2) USER**
 
 ## ADMIN Mode 🔭
 
@@ -26,6 +26,8 @@ This mode makes you as a user and you can perform various activities like...
 - check available blood donors 
 - check blood stock availability
 - Get various details on the user dashboard as total blood donors available, total blood units available, total registered users, your contribution as donor & requests & total blood groups available.
+
+**[Additional Feature: Automatically Removes Blood Samples that are older than 90 days.]**
 
 # About Project Development 🥅
 
