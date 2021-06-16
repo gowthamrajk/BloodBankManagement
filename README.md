@@ -59,7 +59,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Front End 📫
 
-
+![Angular](https://img.shields.io/static/v1?style=for-the-badge&message=Angular+12&color=DD0031&logo=Angular&logoColor=FFFFFF&label=)
 
 ## Back End ⚡
 
