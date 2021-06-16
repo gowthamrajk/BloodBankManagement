@@ -173,5 +173,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Donor List
 
+![image](https://user-images.githubusercontent.com/43011442/122183713-23c77080-cea9-11eb-9910-6e105ec95262.png)
+![image](https://user-images.githubusercontent.com/43011442/122183751-2b871500-cea9-11eb-84fc-85ace5690e72.png)
+
+
+## Edit Profile
+
+![image](https://user-images.githubusercontent.com/43011442/122183836-422d6c00-cea9-11eb-9995-8d95242accb2.png)
+
+
+## Blood Stock
+
+![image](https://user-images.githubusercontent.com/43011442/122183903-51141e80-cea9-11eb-8ab0-4fb1362a6d60.png)
+![image](https://user-images.githubusercontent.com/43011442/122183932-596c5980-cea9-11eb-9d26-881f1d361541.png)
 
 
