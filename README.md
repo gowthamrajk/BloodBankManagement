@@ -94,7 +94,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # UI overview ❤️ 
 
-### Login Page 
+## Login Page 
 
 ![image](https://user-images.githubusercontent.com/43011442/122097194-0785ee00-ce2d-11eb-8e1c-d617a0a232f5.png)
 
@@ -102,20 +102,20 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/122097243-166ca080-ce2d-11eb-9567-ef88c2c7ad6d.png)
 
 
-### Registration Page
+## Registration Page
 
 ![image](https://user-images.githubusercontent.com/43011442/122097324-2e442480-ce2d-11eb-8ac1-f46980f49f9b.png)
 ![image](https://user-images.githubusercontent.com/43011442/122097427-4b78f300-ce2d-11eb-9f6b-723fe01c9851.png)
 
-## ADMIN MODE: 
+# ADMIN MODE: 
 
-### Admin Dashboard
+## Admin Dashboard
 
 ![image](https://user-images.githubusercontent.com/43011442/122097520-664b6780-ce2d-11eb-82c2-fe4efbe1225f.png)
 ![image](https://user-images.githubusercontent.com/43011442/122181602-23c67100-cea7-11eb-99a6-05717be96203.png)
 
 
-### Adding Donor
+## Adding Donor
 
 ![image](https://user-images.githubusercontent.com/43011442/122181815-53757900-cea7-11eb-8270-a69d1c80bea7.png)
 ![image](https://user-images.githubusercontent.com/43011442/122181872-612afe80-cea7-11eb-8197-7b8c292b78c0.png)
@@ -140,9 +140,38 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Blood stock
 
-## USER MODE :
+![image](https://user-images.githubusercontent.com/43011442/122182780-3beac000-cea8-11eb-8529-38fbeb0da0c0.png)
+![image](https://user-images.githubusercontent.com/43011442/122182818-45742800-cea8-11eb-9401-9e153c0231bd.png)
 
-### User Dashboard
+
+# USER MODE :
+
+## User Dashboard
 
 ![image](https://user-images.githubusercontent.com/43011442/122097591-78c5a100-ce2d-11eb-9c36-4a17da921ad6.png)
 ![image](https://user-images.githubusercontent.com/43011442/122098093-030e0500-ce2e-11eb-9e56-3b3544a50fa1.png)
+
+
+## Requesting for Blood
+
+![image](https://user-images.githubusercontent.com/43011442/122183086-853b0f80-cea8-11eb-8927-15b8cd19041b.png)
+![image](https://user-images.githubusercontent.com/43011442/122183145-95eb8580-cea8-11eb-829f-1ffcd84e035c.png)
+
+
+## User Request History
+
+![image](https://user-images.githubusercontent.com/43011442/122183246-ab60af80-cea8-11eb-9f9f-78bd213ad60e.png)
+![image](https://user-images.githubusercontent.com/43011442/122183288-b61b4480-cea8-11eb-81ce-114b85a2bfe2.png)
+
+
+## Donate Blood
+
+![image](https://user-images.githubusercontent.com/43011442/122183362-ca5f4180-cea8-11eb-8fbc-3c4c32770d26.png)
+![image](https://user-images.githubusercontent.com/43011442/122183412-d814c700-cea8-11eb-91f1-2e905655e5d4.png)
+![image](https://user-images.githubusercontent.com/43011442/122183474-e4991f80-cea8-11eb-8b50-443871d5f283.png)
+
+
+## Donor List
+
+
+
