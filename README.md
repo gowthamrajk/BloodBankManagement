@@ -188,3 +188,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/122183932-596c5980-cea9-11eb-9d26-881f1d361541.png)
 
 
+**For more queries, reach me through gowthamraj692@gmail.com or whatsapp @ 9698382306**
+
+<div align="center">
+
+## Show some ❤️ by starring some of the repositories!
+
+</div>
