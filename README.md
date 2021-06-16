@@ -1,11 +1,11 @@
-# BloodBankManagement
+# BloodBankManagement ❤️ 
 
 ![](https://img.shields.io/github/languages/count/gowthamrajk/BloodBankManagement)   ![](https://img.shields.io/github/languages/top/gowthamrajk/BloodBankManagement)
 
 - It is an Online Blood Bank Management system which can facilitate you to contribute as a donor and also manage the entire application.
 - It has 2 modes of operation as 1) ADMIN 2) USER
 
-## ADMIN Mode
+## ADMIN Mode 🔭
 
 This mode makes you as an admin and you can perform various activities like...
 - Adding a Blood Donor
@@ -16,7 +16,7 @@ This mode makes you as an admin and you can perform various activities like...
 - Accept or Reject the Blood Request given by the users/patients
 - Get various details on the admin dashboard as various blood groups and number of units of blood available per blood group.
 
-## USER Mode
+## USER Mode 😄
 
 This mode makes you as a user and you can perform various activities like...
 - Make a blood request for you / a known patient
@@ -27,35 +27,53 @@ This mode makes you as a user and you can perform various activities like...
 - check blood stock availability
 - Get various details on the user dashboard as total blood donors available, total blood units available, total registered users, your contribution as donor & requests & total blood groups available.
 
-# About Project Development
+# About Project Development 🥅
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
-## Development server
+## Development server 📺
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Code scaffolding 📫
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Build ⚡
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Running unit tests 🚀
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running end-to-end tests 🚀
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Further help 💬
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# UI overview
+# TECHNOLOGIES USED 🚀
+
+## Front End 📫
+
+
+
+## Back End ⚡
+
+
+
+## Database 🥅
+
+
+
+## Development 🔭
+
+
+
+# UI overview ❤️ 
 
 ### Login Page 
 
