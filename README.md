@@ -107,11 +107,40 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/122097324-2e442480-ce2d-11eb-8ac1-f46980f49f9b.png)
 ![image](https://user-images.githubusercontent.com/43011442/122097427-4b78f300-ce2d-11eb-9f6b-723fe01c9851.png)
 
+## ADMIN MODE: 
 
 ### Admin Dashboard
 
 ![image](https://user-images.githubusercontent.com/43011442/122097520-664b6780-ce2d-11eb-82c2-fe4efbe1225f.png)
+![image](https://user-images.githubusercontent.com/43011442/122181602-23c67100-cea7-11eb-99a6-05717be96203.png)
 
+
+### Adding Donor
+
+![image](https://user-images.githubusercontent.com/43011442/122181815-53757900-cea7-11eb-8270-a69d1c80bea7.png)
+![image](https://user-images.githubusercontent.com/43011442/122181872-612afe80-cea7-11eb-8197-7b8c292b78c0.png)
+
+
+## Donor List
+
+![image](https://user-images.githubusercontent.com/43011442/122181982-77d15580-cea7-11eb-8573-6b0b766c1686.png)
+![image](https://user-images.githubusercontent.com/43011442/122182024-828bea80-cea7-11eb-9882-5b2814284b1c.png)
+
+
+## User List
+
+![image](https://user-images.githubusercontent.com/43011442/122182124-9e8f8c00-cea7-11eb-9be5-57d02e102f9b.png)
+
+
+## Total Blood Request History
+
+![image](https://user-images.githubusercontent.com/43011442/122182428-e8787200-cea7-11eb-991d-b010ccc160e5.png)
+![image](https://user-images.githubusercontent.com/43011442/122182513-f7f7bb00-cea7-11eb-8684-97b3b28b13ed.png)
+
+
+## Blood stock
+
+## USER MODE :
 
 ### User Dashboard
 
