@@ -1,6 +1,6 @@
 # BloodBankManagement
 
-![](https://img.shields.io/github/languages/count/gowthamrajk/SpringChattingApplication)   ![](https://img.shields.io/github/languages/top/gowthamrajk/SpringChattingApplication)
+![](https://img.shields.io/github/languages/count/gowthamrajk/BloodBankManagement)   ![](https://img.shields.io/github/languages/top/gowthamrajk/BloodBankManagement)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
