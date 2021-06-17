@@ -58,3 +58,9 @@
   font-size: larger;
   font-weight: bolder;
 }
+#searchtxt
+{
+  width: 20%;
+  float: right;
+}
+
