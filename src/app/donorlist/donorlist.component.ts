@@ -14,6 +14,7 @@ export class DonorlistComponent implements OnInit {
   loggedUser = '';
   tempUser = '';
   title = '';
+  bloodGroup : any;
   donors : Observable<Donor[]> | undefined;
   
   constructor(private donorService: DonorService, private activatedRoute: ActivatedRoute, private _router:Router) { }
@@ -59,5 +60,20 @@ export class DonorlistComponent implements OnInit {
     sessionStorage.clear();
     this._router.navigate(['/login']);
   }
-
+  
+  search()
+  {
+    if(this.bloodGroup == ""){
+      this.reloadData();
+    }
+    else
+    {
+       this.donors = this.donors?.pipe(
+         map(results => results.filter(res=>{
+           return res.bloodGroup.toLocaleLowerCase().match(this.bloodGroup.toLocaleLowerCase());
+         }))
+       );
+    }
+  }
+  
 }
