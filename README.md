@@ -57,7 +57,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# TECHNOLOGIES USED 🚀
+# TECHNOLOGIES USED 📌
 
 ## Front End 📫
 
@@ -193,7 +193,25 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 <div align="center">
-
 ## Show some ❤️ by starring this repository !!!
-
 </div>
+
+## Project Created & Maintained By
+
+### Gowthamraj K
+
+Fullstack Web Developer, Passionate in #web_development, #learning_new_things. #Design_thinker
+
+### Connect with me 👋:
+
+[<img align="left" alt="code-Jamm.in" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website1]
+[<img align="left" alt="GowthamRaj | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+[<img align="left" alt="GowthamRaj " width="22px" src="https://www.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png" />][hackerrank]
+[<img align="left" alt="GowthamRaj  | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="GowthamRaj  | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="GowthamRaj  | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[![](https://img.shields.io/badge/9698382306-25D366?style=social&logo=whatsapp&logoColor=green)]()
+
+## Copyright-and-license
+
+Code and documentation Copyright 2021 : **Gowthamraj K**
