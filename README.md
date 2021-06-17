@@ -193,14 +193,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 <div align="center">
+  
 ## Show some ❤️ by starring this repository !!!
+  
 </div>
 
 ## Project Created & Maintained By
 
 ### Gowthamraj K
 
-Fullstack Web Developer, Passionate in #web_development, #learning_new_things. #Design_thinker
+**Fullstack Web Developer**, Passionate in **#web_development, #learning_new_things. #Design_thinker**
 
 ### Connect with me 👋:
 
@@ -212,6 +214,15 @@ Fullstack Web Developer, Passionate in #web_development, #learning_new_things. #
 [<img align="left" alt="GowthamRaj  | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [![](https://img.shields.io/badge/9698382306-25D366?style=social&logo=whatsapp&logoColor=green)]()
 
-## Copyright-and-license
+## Copyright-and-license 📌
 
 Code and documentation Copyright 2021 : **Gowthamraj K**
+
+
+[website1]: https://sites.google.com/view/code-jamm
+[hackerrank]: https://www.hackerrank.com/gowthamraj692
+[website]: https://github.com/gowthamrajk
+[twitter]: https://twitter.com/Gowtham29341737
+[youtube]: https://www.youtube.com/channel/UC_Q5Zet9Oz-UVAeJ-oE_uGQ?view_as=subscriber
+[instagram]: https://instagram.com/gow_t_h_a_m_r_a_j
+[linkedin]: https://www.linkedin.com/in/gowtham-kittusamy-54b835174/
