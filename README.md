@@ -128,6 +128,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/122182024-828bea80-cea7-11eb-9882-5b2814284b1c.png)
 
 
+## Searching option Result
+
+![image](https://user-images.githubusercontent.com/43011442/122520061-ceb66680-d030-11eb-83af-dd611cba5752.png)
+
+
+
+
 ## User List
 
 ![image](https://user-images.githubusercontent.com/43011442/122182124-9e8f8c00-cea7-11eb-9be5-57d02e102f9b.png)
