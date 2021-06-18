@@ -3,6 +3,9 @@ import { Observable } from 'rxjs';
 import { User } from './user';
 import { map } from "rxjs/operators";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+
+const NAV_URL = environment.apiURL;
 
 @Injectable({
   providedIn: 'root'
@@ -15,12 +18,12 @@ export class RegistrationService {
   // public loginUserFromRemote(email:string,password:string)
   // {
   //     sessionStorage.setItem('user', this.user.username);
-  //     return JSON.stringify(this._http.post<any>("http://localhost:8080/authenticate",{email,password}));
+  //     return JSON.stringify(this._http.post<any>(`${NAV_URL}/authenticate`,{email,password}));
   // }
 
 public loginUserFromRemote(email:string, password:string)
 {
-  return this._http.post<any>(`http://localhost:8080/login`,{email,password}).pipe(
+  return this._http.post<any>(`${NAV_URL}/login`,{email,password}).pipe(
     map(
       data => {
         localStorage.setItem('USER', email);
@@ -69,7 +72,7 @@ public adminLoginFromRemote(email: string, password: string)
 
 public registerUserFromRemote(user:User):Observable<any>
 {
-    return this._http.post<any>("http://localhost:8080/register",user)
+    return this._http.post<any>(`${NAV_URL}/register`,user)
 }
 
 }
