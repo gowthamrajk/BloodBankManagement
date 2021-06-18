@@ -124,7 +124,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Donor List
 
-![image](https://user-images.githubusercontent.com/43011442/122433261-af2d2880-cfb3-11eb-9f51-c625c69ccf73.png)
+![image](https://user-images.githubusercontent.com/43011442/122520821-bdba2500-d031-11eb-98f8-636d360f50d3.png)
 ![image](https://user-images.githubusercontent.com/43011442/122182024-828bea80-cea7-11eb-9882-5b2814284b1c.png)
 
 
