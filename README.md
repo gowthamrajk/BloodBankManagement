@@ -19,6 +19,7 @@ This mode makes you as an admin and you can perform various activities like...
 ## USER Mode 😄
 
 This mode makes you as a user and you can perform various activities like...
+- User can register for a new account in-order to login to the portal
 - Make a blood request for you / a known patient
 - check the blood request history and know whether the admin accepted or rejected your request
 - View & Edit user profile details
