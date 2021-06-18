@@ -145,7 +145,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![image](https://user-images.githubusercontent.com/43011442/122182818-45742800-cea8-11eb-9401-9e153c0231bd.png)
 
 
-# USER MODE :
+# USER MODE 😄
 
 ## User Dashboard
 
@@ -200,9 +200,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 </div>
 
 
-## Project Created & Maintained By
+## Project Developed & Maintained By 
 
-# ![](https://img.shields.io/static/v1?style=for-the-badge&message=Gowthamraj+K&color=007396&label=)
+# ![](https://img.shields.io/static/v1?style=for-the-badge&message=Gowthamraj+K&color=007396&label=) 😄
 
 **Fullstack Web Developer**, Passionate in **#web_development, #learning_new_things. #Design_thinker**
 
