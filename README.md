@@ -202,7 +202,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Project Created & Maintained By
 
-### ![](https://img.shields.io/static/v1?style=for-the-badge&message=Gowthamraj+K&color=007396&label=)
+# ![](https://img.shields.io/static/v1?style=for-the-badge&message=Gowthamraj+K&color=007396&label=)
 
 **Fullstack Web Developer**, Passionate in **#web_development, #learning_new_things. #Design_thinker**
 
