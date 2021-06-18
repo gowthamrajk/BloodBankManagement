@@ -1,9 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Donor } from './donor';
 import { Requesting } from './requesting';
 import { User } from './user';
+
+const NAV_URL = environment.apiURL;
 
 @Injectable({
   providedIn: 'root'
@@ -14,94 +17,94 @@ export class DonorService {
   
   public getDonorList(): Observable<any>
   {
-    return this._http.get<any>("http://localhost:8080/donorlist");
+    return this._http.get<any>(`${NAV_URL}/donorlist`);
   }
 
   public getRequestHistory(): Observable<any>
   {
-    return this._http.get<any>("http://localhost:8080/requestHistory");
+    return this._http.get<any>(`${NAV_URL}/requestHistory`);
   }
 
   public getRequestHistoryByEmail(loggedUser:string): Observable<any>
   {
-    return this._http.get<any>("http://localhost:8080/requestHistory/"+loggedUser);
+    return this._http.get<any>(`${NAV_URL}/requestHistory/`+loggedUser);
   }
 
   public getUserList(): Observable<any>
   {
-    return this._http.get<any>("http://localhost:8080/userlist");
+    return this._http.get<any>(`${NAV_URL}/userlist`);
   }
 
   constructor(private _http : HttpClient) { }
 
   public addDonorFromRemote(donor:Donor):Observable<any>
   {
-    return this._http.post<any>("http://localhost:8080/addDonor",donor);
+    return this._http.post<any>(`${NAV_URL}/addDonor`,donor);
   }
 
   public requestForBlood(request:Requesting):Observable<any>
   {
-    return this._http.post<any>("http://localhost:8080/requestblood",request);
+    return this._http.post<any>(`${NAV_URL}/requestblood`,request);
   }
 
   public requestForAddingDonor(donor:Donor):Observable<any>
   {
-    return this._http.post<any>("http://localhost:8080/addAsDonor",donor);
+    return this._http.post<any>(`${NAV_URL}/addAsDonor`,donor);
   }
 
   public getBloodDetails() : Observable<any>
   {
-    return this._http.get<any>("http://localhost:8080/bloodDetails");
+    return this._http.get<any>(`${NAV_URL}/bloodDetails`);
   }
 
   public getProfileDetails(loggedUser : string) : Observable<any>
   {
-    return this._http.get("http://localhost:8080/profileDetails/"+loggedUser);
+    return this._http.get(`${NAV_URL}/profileDetails/`+loggedUser);
   }
   
   public UpdateUserProfile(user:any):Observable<any>
   {
-    return this._http.put<any>("http://localhost:8080/updateuser",user)
+    return this._http.put<any>(`${NAV_URL}/updateuser`,user)
   }
   
   public acceptRequestForBlood(loggedUser : string) : Observable<any>
   {
-    return this._http.get("http://localhost:8080/acceptstatus/"+loggedUser);
+    return this._http.get(`${NAV_URL}/acceptstatus/`+loggedUser);
   }
 
   public rejectRequestForBlood(loggedUser : string) : Observable<any>
   {
-    return this._http.get("http://localhost:8080/rejectstatus/"+loggedUser)
+    return this._http.get(`${NAV_URL}/rejectstatus/`+loggedUser)
   }
 
   public getTotalDonors() : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalDonors");
+    return this._http.get(`${NAV_URL}/getTotalDonors`);
   }
 
   public getTotalUsers() : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalUsers");
+    return this._http.get(`${NAV_URL}/getTotalUsers`);
   }
 
   public getTotalBloodGroups() : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalBloodGroups");
+    return this._http.get(`${NAV_URL}/getTotalBloodGroups`);
   }
 
   public getTotalUnits() : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalUnits");
+    return this._http.get(`${NAV_URL}/getTotalUnits`);
   }
 
   public getTotalRequests(loggedUser : string) : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalRequests/"+loggedUser);
+    return this._http.get(`${NAV_URL}/getTotalRequests/`+loggedUser);
   }
 
   public getTotalDonationCount(loggedUser : string) : Observable<any>
   {
-    return this._http.get("http://localhost:8080/getTotalDonationCount/"+loggedUser);
+    return this._http.get(`${NAV_URL}/getTotalDonationCount/`+loggedUser);
   }
 
 }
