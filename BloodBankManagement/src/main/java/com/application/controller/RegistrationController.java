@@ -34,10 +34,10 @@ public class RegistrationController
     {
     	return "Welcome to Blood Bank Management system !!!";
     }
-    
+  
     @PostMapping("/authenticate")
     @CrossOrigin(origins = "http://localhost:4200")
-    public String generateToken(@RequestBody AuthRequest authRequest) throws Exception 
+    public ResponseEntity<String> generateToken(@RequestBody AuthRequest authRequest) throws Exception 
     {
         try 
         {
@@ -58,7 +58,7 @@ public class RegistrationController
         {
             throw new Exception("Invalid Username/password");
         }
-        return jwtUtil.generateToken(authRequest.getEmail());
+        return new ResponseEntity<String>(jwtUtil.generateToken(authRequest.getEmail()), HttpStatus.OK);
     }
 	
 	@PostMapping("/register")
