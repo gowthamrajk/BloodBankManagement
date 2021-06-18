@@ -182,7 +182,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Donor List
 
-![image](https://user-images.githubusercontent.com/43011442/122433282-b6543680-cfb3-11eb-931a-c18de9178174.png)
+![image](https://user-images.githubusercontent.com/43011442/122520477-42f10a00-d031-11eb-8c6e-fb4f8c41ed3c.png)
+![image](https://user-images.githubusercontent.com/43011442/122520556-5dc37e80-d031-11eb-8859-6fb945d44865.png)
 ![image](https://user-images.githubusercontent.com/43011442/122183751-2b871500-cea9-11eb-84fc-85ace5690e72.png)
 
 
