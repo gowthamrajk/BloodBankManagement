@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/languages/count/gowthamrajk/BloodBankManagement)   ![](https://img.shields.io/github/languages/top/gowthamrajk/BloodBankManagement)
 
-- It is an **Online Blood Bank Management** system which can facilitate you to contribute as a donor and also manage the entire application.
+- It is an **Online Blood Bank Management System** which can facilitate you to contribute as a donor and also manage the entire application.
 - It has 2 modes of operation as **1) ADMIN 2) USER**
 
 ## ADMIN Mode 🔭
