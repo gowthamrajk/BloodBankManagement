@@ -30,6 +30,7 @@ This mode makes you as a user and you can perform various activities like...
 
 **[Additional Feature: Automatically Removes Blood Samples that are older than 90 days.]**
 
+
 # About Project Development 🥅
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
